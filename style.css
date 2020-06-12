@@ -1,4 +1,8 @@
-body {
+
+* {
+    box-sizing: border-box;
+  }
+  body {
     background-color: #990909;
     font-size: 18px;
   }
@@ -17,12 +21,19 @@ nav {
     color: red;
 }
 
-/*left article*/
-.left{
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+     }
+  
+  /* Left column */
+  .left {
+    width: 25%;
+    height: 500px;
     background-color: #7D0909;
-}
-
-ul {
+  }
+  ul {
     line-height: 3;
     list-style-type: none;
     margin: 0;
@@ -34,18 +45,34 @@ ul {
 .art:hover {
     color: red;
 }
-/*center*/
-section, article {
-    margin-top: 20px;
-    padding-bottom: 20px;
-}
-/*right article*/
-.right{
+ 
+ /*right column*/
+.right {
+    width: 25%;
+    height: 500px;
     background-color: #EEF1F6;
-}
+  }
 h3 {
     background-color: #938F83;
 }
+  
+  /* Middle column */
+.center {
+    color: white;
+    width: 50%;
+  }
+  section, article {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
 footer {
       font-size: 20px;
       color: white;
