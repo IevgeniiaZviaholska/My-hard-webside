@@ -1,0 +1,55 @@
+body {
+    background-color: #990909;
+    font-size: 18px;
+  }
+header {
+    text-align: center;
+}
+nav {
+    overflow: hidden;
+    background-color: #000000;
+}
+.fig {
+    text-decoration: none;
+    color: white;
+}
+.fig:hover {
+    color: red;
+}
+
+/*left article*/
+.left{
+    background-color: #7D0909;
+}
+
+ul {
+    line-height: 3;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  } 
+.art {
+    color: #C6400E;
+} 
+.art:hover {
+    color: red;
+}
+/*center*/
+section, article {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+/*right article*/
+.right{
+    background-color: #EEF1F6;
+}
+h3 {
+    background-color: #938F83;
+}
+footer {
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      background-color: #C6400E;
+  }
+
